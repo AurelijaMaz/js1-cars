@@ -1,21 +1,19 @@
 const  { Router } = require('express');
+const {
+    getCars,
+    postCar,
+    updateCar,
+    deleteCar
+} = require('../controlers/cars')
 
 const router = Router();
 
-router.get('/', (req, res) => {
-    res.send('Ateityje grazinsiu masinas')
-});
+router.get('/', getCars);
 
-router.post('/', (req, res) => {
-    res.send('Ateityje grazinsiu masinas')
-});
+router.post('/', postCar);
 
-router.patch('/', (req, res) => {
-    res.send('Ateityje grazinsiu masinas')
-});
+router.patch('/', updateCar);
 
-router.delete('/', (req, res) => {
-    res.send('Ateityje grazinsiu masinas')
-});
+router.delete('/', deleteCar);
 
 module.exports = router;

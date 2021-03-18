@@ -10,6 +10,7 @@ const { SERVER_PORT } = process.env;
 
 server.use(cors());
 server.use(morgan('tiny'));
+server.use(express.json())
 
 server.use('/cars', carsRouter);
 

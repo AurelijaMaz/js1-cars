@@ -1,0 +1,19 @@
+{
+  "name": "js1-cars",
+  "version": "1.0.0",
+  "description": "Mokomoji MERN aplikacija",
+  "main": "server/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AurelijaMaz/js1-cars.git"
+  },
+  "author": "Aurelija Mazeikiene",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AurelijaMaz/js1-cars/issues"
+  },
+  "homepage": "https://github.com/AurelijaMaz/js1-cars#readme"
+}

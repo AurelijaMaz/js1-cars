@@ -1,8 +1,14 @@
 const CarModel = require('../models/CarModel')
 
 const getCars = (req, res) => {
-    const cars = await CarModel.find();
-    res.status(200).json('Ateityje grazinsiu masinas')
+    try {
+
+        const carsFromDB = await CarModel.find();
+        res.status(200).json({cars: carsFromDB})
+    }
+    catch(error){
+        res.status(404).json({message: error.message})
+    }
 }
 
 

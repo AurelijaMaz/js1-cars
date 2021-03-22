@@ -18,7 +18,10 @@ const schema = new mongoose.Schema({
         required: true
     },
 },
-    { timestamps: true }
+{
+    timestamps: true,
+    // strict: false // Šis nustatymas leidžia įdėti bet kokias papildomas savybes
+  }
 );
 
 module.exports = mongoose.model('Car', schema);

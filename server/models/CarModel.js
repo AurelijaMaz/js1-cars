@@ -21,4 +21,4 @@ engineVolume: {
 { timestamps: true }
  );
 
-export default mongoose.Model('Car', schema);
+module.export = mongoose.model('Car', schema);

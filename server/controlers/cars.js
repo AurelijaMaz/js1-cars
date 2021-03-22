@@ -1,6 +1,7 @@
-
+const CarModel = require('../models/CarModel')
 
 const getCars = (req, res) => {
+    const cars = await CarModel.find();
     res.status(200).json('Ateityje grazinsiu masinas')
 }
 
